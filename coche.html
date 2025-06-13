@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Precio:
+    <input type="number" name="precio" id="precio" value="" />
+    Coche:
+    <select name="coche" id="coche" onchange="descCoche(this.value, document.getElementById('precio').value);">
+        <option value="">Seleccione</option>
+        <option value="1">FORD FIESTA</option>
+        <option value="2">FORD FOCUS</option>
+        <option value="3">FORD ESCAPE</option>
+        <option value="4">Otros</option>
+    </select> 
+    <br>   
+
+    Descuento:
+    <div id="descuento">
+
+    </div>
+    
+    <script src="./js/ejercio5.js"></script>
+</body>
+</html>
