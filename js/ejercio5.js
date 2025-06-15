@@ -17,9 +17,9 @@ function descCoche(coche, precio){
         descuento = 0;
     }
 
-    valor = [modelo, descuento];
+    valor = [modelo, descuento, precio];
 
     let miDiv = document.getElementById('descuento');
-    miDiv.innerHTML = 'Coche: ' + valor[0] + ', Descuento: ' + valor[1];
+    miDiv.innerHTML = 'Coche: ' + valor[0] + ', Precio: ' +  valor[2] +', Descuento: ' + valor[1];
 
 }
